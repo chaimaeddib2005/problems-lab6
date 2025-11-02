@@ -1,0 +1,35 @@
+package problem3;
+
+public class Book extends Document{
+    protected String author;
+    protected int nbrPages;
+    public Book(int numRec, String title, String author, int nbrPages) {
+        super(numRec, title);
+        this.author = author;
+        this.nbrPages = nbrPages;
+
+    }
+    public String getAuthor() {
+        return author;
+    }
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "numRec=" + numRec +
+                ", title='" + title + '\'' +
+                "author='" + author + '\'' +
+                ", nbrPages=" + nbrPages +
+                '}';
+    }
+
+    public int getNbrPages() {
+        return nbrPages;
+    }
+    public void setNbrPages(int nbrPages) {
+        this.nbrPages = nbrPages;
+    }
+}
