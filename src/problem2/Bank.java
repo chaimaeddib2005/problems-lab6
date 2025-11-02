@@ -8,13 +8,7 @@ public class Bank {
     public Bank(String name) {
         this.name = name;
     }
-    public ArrayList<Customer> getCustomers() {
-        return customers;
-    }
 
-    public void setCustomers(ArrayList<Customer> customers) {
-        this.customers = customers;
-    }
     public void addCustomer(Customer customer){
         if(customers.contains(customer)){
             return;

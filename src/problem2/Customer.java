@@ -11,12 +11,7 @@ public class Customer {
     public String getName() {
         return name;
     }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public ArrayList<Double> getTransactions() {
-        return transactions;
-    }
+
     public void addTransaction(Double transaction){
         transactions.add(transaction);
     }
